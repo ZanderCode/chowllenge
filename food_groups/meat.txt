@@ -1,0 +1,7 @@
+beef
+ham
+lamb
+chicken
+pork
+turkey
+duck
