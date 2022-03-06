@@ -7,13 +7,13 @@ class Slot extends Component{
     constructor(props){
         super(props)
         this.state = {titles:props.titles,contents:props.data,data:"loading..."}
-        console.log(this.state)
     }
 
 
     gatherData = () => {
-        let value = this.state.meat;
-        this.setState({data:this.state.contents.beanpealentil})
+        let max = this.state.titles.length;
+        let list = Math.floor(Math.random() * (max));
+        this.setState({data:this.state.contents[this.state.titles[list]]})
     }
 
     render = () => {
@@ -21,12 +21,13 @@ class Slot extends Component{
         const dataStyle = {
             "backgroundColor":"gray",
             "color":"white",
-            "padding":10}
+            "padding":10,
+        }
         const buttonStyle = {
             "display": "inline-block",
             "padding":10,
             "backgroundColor":"lightgray",
-            "width" : 200,
+            "width" : "80%",
             "textAlign" : "center",
             "marginTop" : 20,
             "marginLeft" : 10
