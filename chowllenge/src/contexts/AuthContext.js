@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import { auth, provider } from "../fb/firebase"
+import { auth, provider, app,db } from "../fb/firebase"
 import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
+import { getDatabase, ref, child,push } from "firebase/database";
+import { collection, addDoc } from "firebase/firestore"; 
 
 const AuthContext = React.createContext();
 
@@ -38,6 +40,30 @@ export function AuthProvider({children}){
         signOut(auth)
     }
 
+    async function sendInfo(){
+        if (!currentUser) return;
+
+        try {
+            const docRef = await addDoc(collection(db, "userdata"), {
+              first: "Ada",
+              last: "Lovelace",
+              born: 1815
+            });
+            console.log("Document written with ID: ", docRef.id);
+          } catch (e) {
+            console.error("Error adding document: ", e);
+          }
+          
+    }
+    function updateComments(id,comments){
+        if (!currentUser) return;
+
+    }
+    function updateImage(id,image){
+        if (!currentUser) return;
+
+    }
+
     useEffect(()=>{
         const unsubscriber = auth.onAuthStateChanged(user => {
             setCurrentUser(user);
@@ -49,7 +75,8 @@ export function AuthProvider({children}){
     const value = {
         currentUser,
         signIn,
-        logOut
+        logOut,
+        sendInfo,
     }
 
     return (

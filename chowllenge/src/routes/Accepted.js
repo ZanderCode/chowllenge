@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import {useAuth} from "../contexts/AuthContext"
+import { Navigate  } from "react-router-dom";
 
-class Accepted extends Component{
-    render = () => {
-        return (<div>Accepted</div>)
+export default function Accepted(){
+    
+    const {currentUser} = useAuth();
+
+    if (!currentUser){
+        return <Navigate to="/"/>;
     }
-}
 
-export default Accepted;
+    return (<div>Accepted</div>);
+}

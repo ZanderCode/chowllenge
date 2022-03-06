@@ -7,7 +7,6 @@ import Slot from "./routes/Slot";
 import Accepted from "./routes/Accepted";
 import History from "./routes/History";
 import NotFound from "./routes/NotFound";
-import PrivateRoute from './routes/PrivateRoute.js';
 
 import { AuthProvider } from './contexts/AuthContext';
 

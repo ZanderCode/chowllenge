@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import {useAuth} from "../contexts/AuthContext"
+import { Navigate  } from "react-router-dom";
 
-class History extends Component{
-    render = () => {
-        return (<div>History</div>)
+export default function History(){
+
+    const {currentUser} = useAuth()
+
+    if (!currentUser){
+        return <Navigate to="/"/>
     }
-}
 
-export default History;
+    return (<div>History</div>)
+}
