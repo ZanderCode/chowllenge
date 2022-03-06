@@ -10,9 +10,11 @@ import NotFound from "./routes/NotFound";
 
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import firebase from "./fb/firebase"
+import { AuthProvider } from './contexts/AuthContext';
 
 export default function Index(){
     return(
+      <AuthProvider>
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login />} />
@@ -22,6 +24,8 @@ export default function Index(){
               <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
+      </AuthProvider>
+
     );
 };
 ReactDOM.render(<Index />, document.getElementById("root"));

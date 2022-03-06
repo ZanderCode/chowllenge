@@ -1,34 +1,12 @@
-import React,{ Component } from "react";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import { auth, provider } from "../fb/firebase"
+import React from "react";
+import {useAuth} from "../contexts/AuthContext"
 
-class Login extends Component{
-
-    onLogIn(){
-        
-signInWithPopup(auth, provider)
-    .then((result) => {
-    // This gives you a Google Access Token. You can use it to access the Google API.
-    const credential = GoogleAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
-    // The signed-in user info.
-    const user = result.user;
-    // ...
-    }).catch((error) => {
-    // Handle Errors here.
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // The email of the user's account used.
-    const email = error.email;
-    // The AuthCredential type that was used.
-    const credential = GoogleAuthProvider.credentialFromError(error);
-    // ...
-    });
-    }
-
-    render = ()=>{
-        return (<div onClick={this.onLogIn}>Login</div>);
-    }
+export default function Login(){
+    const {signIn,currentUser} = useAuth()
+    return (
+        <div>
+            <div onClick={signIn}>Login</div>
+            <div>{currentUser && currentUser.email}</div>
+        </div>
+    );
 }
-
-export default Login;

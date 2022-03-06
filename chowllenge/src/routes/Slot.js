@@ -1,11 +1,7 @@
 import React, { Component } from "react";
-import firebase from "../fb/firebase"
+import {useAuth} from "../contexts/AuthContext"
 
-
-class Slot extends Component{
-    render = () => {
-        return (<div>Slot</div>)
-    }
+export default function Slot(){
+    const {currentUser} = useAuth()
+    return (<div>{currentUser.email}</div>);
 }
-
-export default Slot;
