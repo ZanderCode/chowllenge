@@ -1,31 +1,29 @@
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 
 import Login from "./routes/Login";
 import Slot from "./routes/Slot";
 import Accepted from "./routes/Accepted";
 import History from "./routes/History";
 import NotFound from "./routes/NotFound";
+import PrivateRoute from './routes/PrivateRoute.js';
 
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import firebase from "./fb/firebase"
 import { AuthProvider } from './contexts/AuthContext';
 
 export default function Index(){
     return(
+    <BrowserRouter>
       <AuthProvider>
-        <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Login />} />
-              <Route path="/slot" element={<Slot />} />
-              <Route path="/history" element={<History />} />
-              <Route path="/accepted" element={<Accepted />} />
-              <Route path="*" element={<NotFound/>}/>
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route path="/slot" element={<Slot />}/>
+          <Route path="/history" element={<History />} />
+          <Route path="/accepted" element={<Accepted />} />
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
       </AuthProvider>
-
+    </BrowserRouter>
     );
 };
 ReactDOM.render(<Index />, document.getElementById("root"));
