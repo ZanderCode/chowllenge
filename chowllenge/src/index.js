@@ -10,13 +10,35 @@ import NotFound from "./routes/NotFound";
 
 import { AuthProvider } from './contexts/AuthContext';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import {GoogleAuthProvider, getAuth} from "firebase/auth"
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDt-8b4y3dAOemsIwX0obm-URfDcYYq-Pg",
+  authDomain: "chowllenge.firebaseapp.com",
+  projectId: "chowllenge",
+  storageBucket: "chowllenge.appspot.com",
+  messagingSenderId: "333844702777",
+  appId: "1:333844702777:web:386365469f0b9b0391cfe8",
+  measurementId: "G-C5QZEXP9QC"
+};
+
+
 export default function Index(){
-    return(
+    
+const app = initializeApp(firebaseConfig);
+const provider = new GoogleAuthProvider();
+const db = getFirestore(app);
+const auth = getAuth();
+
+  return(
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-          <Route exact path="/" element={<Login />} />
-          <Route path="/slot" element={<Slot />}/>
+          <Route exact path="/" element={<Login a={auth} p={provider}/>} />
+          <Route path="/slot" element={<Slot a={auth} d={db}/>}/>
           <Route path="/history" element={<History />} />
           <Route path="/accepted" element={<Accepted />} />
           <Route path="*" element={<NotFound/>}/>

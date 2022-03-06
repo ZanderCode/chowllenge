@@ -40,14 +40,14 @@ export function AuthProvider({children}){
         signOut(auth)
     }
 
-    async function sendInfo(){
+    async function sendInfo(ings){
         if (!currentUser) return;
 
         try {
-            const docRef = await addDoc(collection(db, "userdata"), {
-              first: "Ada",
-              last: "Lovelace",
-              born: 1815
+            const docRef = await addDoc(collection(db, currentUser.email), {
+              ingredients: ings,
+              comments: "",
+              image: ""
             });
             console.log("Document written with ID: ", docRef.id);
           } catch (e) {
