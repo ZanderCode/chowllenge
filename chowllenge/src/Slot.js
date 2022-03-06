@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import file from './food_groups/meat.txt'
 import './Slot.css';
+import Slider from './Slider.js';
 
 class Slot extends Component{
 
@@ -37,6 +37,10 @@ class Slot extends Component{
             <div className="Slot">
                 <h1>Gather Ingredients</h1>
                 <div style={dataStyle}>{this.state.data}</div>
+                <Slider name={"Item 1"}/>
+                <Slider name={"Item 2"}/>
+                <Slider name={"Item 3"}/>
+                <Slider name={"Item 4"}/>
                 <div style={buttonStyle} onClick={this.gatherData}>Roll</div>
                 <div style={buttonStyle} onClick={()=>{this.setState({data:""})}}>Reset</div>
             </div>
