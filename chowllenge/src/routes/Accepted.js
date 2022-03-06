@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Navigate  } from "react-router-dom";
 
 import { collection, getDocs } from "firebase/firestore";
+import AcceptedComps from "../comps/AcceptedComps"
 
 class Accepted extends Component{
     constructor(props){
@@ -30,9 +31,9 @@ class Accepted extends Component{
             <div>
                 <div onClick={()=>this.readDatabase(this.props.d,this.props.a)}>Accepted</div>
                 <div>{Object.keys(this.state.docs).map((item, i) => (
-                <li key={i}>
-                    <span>{item} : {this.state.docs[item]["ingredients"]}</span>
-                </li>
+                    <li key={i}>
+                        <span>{item} : <AcceptedComps items={this.state.docs[item]["ingredients"]}/></span>
+                    </li>
                 ))}</div>
             </div>
         );
@@ -40,3 +41,4 @@ class Accepted extends Component{
 }
 
 export default Accepted;
+

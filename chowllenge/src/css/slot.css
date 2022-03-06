@@ -1,0 +1,34 @@
+.brick {
+  position: absolute;
+  width: 80%;
+  top: 20%;
+}
+.lever {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+}
+
+.spinners {
+  position: absolute;
+  top: 10%;
+  width: 60%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+.spinner {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  border: 1px solid black;
+  left: 70px;
+  padding: 20px;
+}
+
+.sub {
+  position: relative;
+  top: 100px;
+  width: 100%;
+}

@@ -1,13 +1,117 @@
-.login-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  text-align: center;
-  background-color: gray;
-}
-
 .login-button > Button {
   text-align: center;
+  background-color: white;
+  color: #ff7171;
+  width: 100%;
+  border-radius: 35px;
+  font-size: 25px;
+  font-family: "FuturaMedium";
+  margin: auto;
+}
+
+.alt-signin {
+  text-align: center;
+  display: inline-block;
+}
+
+.alt-container {
+  margin: auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.header {
+  font-family: "FuturaMedium";
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+.signup {
+  font-family: "FuturaHeavy";
+}
+
+.rememberme {
+  color: white;
+  font-family: "FuturaHeavy";
+  margin-bottom: 30px;
+}
+
+.email,
+.pass {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ff9e9e;
+  border-radius: 20px;
+  color: whtie;
+}
+
+.main-content {
+  width: 85%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.forgot {
+  text-align: right;
+  font-family: "FuturaMedium";
+  color: white;
+}
+
+.alt-options {
+  text-align: center;
+  font-family: "FuturaMedium";
+  color: white;
+}
+
+.log {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  border: 2px solid black;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: visible;
+}
+
+.login-button {
+  margin: auto;
+}
+
+.google {
+  width: 50px;
+  margin-right: 10px;
+}
+
+body {
+  background-color: #ff7171;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#ff7171),
+      to(#ff3d3d)
+    )
+    fixed;
+}
+
+@font-face {
+  font-family: "FuturaHeavy";
+  src: local("FuturaHeavy"),
+    url("../fonts/Futura Heavy font.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "FuturaMedium";
+  src: local("FuturaMedium"),
+    url("../fonts/futura medium bt.ttf") format("truetype");
+  font-weight: normal;
 }

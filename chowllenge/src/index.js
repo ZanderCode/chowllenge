@@ -26,7 +26,7 @@ const firebaseConfig = {
 
 
 export default function Index(){
-    
+
 const app = initializeApp(firebaseConfig);
 const provider = new GoogleAuthProvider();
 const db = getFirestore(app);

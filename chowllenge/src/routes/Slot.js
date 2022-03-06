@@ -3,6 +3,16 @@ import {useAuth} from "../contexts/AuthContext"
 import { Navigate  } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore"; 
 
+import "../css/slot.css"
+import BRICK from "../assets/Asset 15.svg"
+import CHARACTER from "../assets/Asset 14.svg"
+
+import Lottie from "lottie-react";
+
+import SPINNER from "../anims/spinner.json";
+import LEVER from "../anims/lever.json";
+import WILD from "../assets/Asset 19.svg";
+
 import {getFileName} from 'expo_file_name'
 import solid1 from "../food_groups/meat.txt";
 import solid2 from "../food_groups/beanpealentil.txt";
@@ -157,13 +167,26 @@ class Slot extends Component{
         }
         return (
             <div>
-                <h1>Slot Page</h1>
+                <div className="main-body">
+                    <div className="container">
+                        <div className="brick">
+                            <img src={BRICK}/>
+                            <div className="spinners">
+                                <div className="spinner"><Lottie className="lev" animationData={SPINNER} /></div>
+                                <div className="spinner"><Lottie className="lev" animationData={SPINNER} /></div>
+                                <div className="spinner"><Lottie className="lev" animationData={SPINNER} /></div>
+                                <div className="spinner"><Lottie className="lev" animationData={SPINNER} /></div>
+                            </div>
+                            <div className="sub" style={saveStyle} onClick={()=>this.save(this.props.d,this.props.a,[this.state.solidOne,this.state.solidTwo,this.state.liquid,this.state.wildCard])}>Submit </div>
+                        </div>
+                        <div className="lever"><Lottie className="lev" animationData={LEVER} /></div>
+                    </div>
+                </div>
                 <div>{this.state.solidOne}</div>
                 <div>{this.state.solidTwo}</div>
                 <div>{this.state.liquid}</div>
                 <div>{this.state.wildCard}</div>
-                <div style={rollStyle} onClick={()=>this.readFiles()}>Roll</div>
-                <div style={saveStyle} onClick={()=>this.save(this.props.d,this.props.a,[this.state.solidOne,this.state.solidTwo,this.state.liquid,this.state.wildCard])}>Submit </div>
+                
             </div>        
         );
     }

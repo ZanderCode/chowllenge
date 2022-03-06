@@ -3,8 +3,17 @@ import {useAuth} from "../contexts/AuthContext"
 import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { Navigate } from "react-router-dom";
 import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
+import TextField from '@mui/material/TextField';
 
 import "../css/login.css"
+import GOOGLE from "../assets/Asset 7.svg"
+import RIT from "../assets/Asset 8.svg"
+import TITLE from "../assets/Asset 9.svg"
+import LOGIN from "../assets/Asset 10.svg"
+import '../fonts/Futura Heavy font.ttf'; 
+import '../fonts/futura medium bt.ttf'; 
+import { color } from "@mui/system";
 
 // export default function Login(){
 //     const {signIn,logOut,currentUser} = useAuth()
@@ -62,11 +71,42 @@ class Login extends Component{
             return (<Navigate to="/slot"/>);       
         }
 
+
         return(
             <div>
-                <div className="login-button">
-                    <Button variant="contained" onClick={()=>this.login(this.props.a,this.props.p)}> login </Button>
-                    <p>w/ google</p>
+                <div className="main-content">
+                    
+                    <img className="tit" src={TITLE}/>
+                    <h1 className="header">Log In</h1>
+
+
+                    <div className="text-fields">
+                        <TextField className="email" label="Enter your email" variant="filled" />
+                        <div style={{"height":"20px"}}></div>
+                        <TextField className="pass" label="Enter your password" variant="filled" />  
+                    </div>
+                    
+                    <p className="forgot">Forgot Password?</p>
+                    <span className="rememberme"><Checkbox color="default" sx={{
+                                                                "color": "white",
+                                                            }} className="remember" />Remember Me</span>
+                    <div className="login-button">
+                        <Button variant="contained"  onClick={()=>this.login(this.props.a,this.props.p)}> 
+                        LOG IN
+                        </Button>
+                        <div className="alt-options">
+                            <p>- OR -</p>
+                            <p>Sign in with</p>
+                        </div>
+                        <div className="alt-container">
+                            <div className="alt-signin"><img src={RIT}/></div>
+                            <div className="alt-signin"></div>
+                            <div className="alt-signin"><img src={GOOGLE}/></div>
+                        </div>
+                        <div className="alt-options">
+                            <p>Don't have an account? <span className="signup">Sign Up</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
