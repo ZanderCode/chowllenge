@@ -1,6 +1,6 @@
-anchovies
-freshwater trout
-herring
-light tuna
-salmon
+anchovies,
+freshwater trout,
+herring,
+light tuna,
+salmon,
 sardines

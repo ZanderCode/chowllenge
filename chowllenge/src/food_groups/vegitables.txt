@@ -1,121 +1,121 @@
-amaranth leaves
-arugula (rocket)
-basil
-beet greens
-bitter melon leaves
-bok choy
-broccoli
-broccoli rabe (rapini)
-broccolini
-chamnamul
-chard
-chrysanthemum leaves
-cilantro
-collard greens
-cress
-dandelion greens
-dark-green leafy lettuce
-endive
-escarole
-kale
-lambsquarters
-mesclun
-mixed greens
-mustard greens
-nettles
-poke greens
-romaine lettuce
-spinach
-Swiss chard
-taro leaves
-turnip greens
-watercress
-acorn squash
-butternut squash
-calabaza
-carrots
-hubbard squash
-kabocha squash
-pimento/pimiento
-pumpkin
-red and orange bell peppers
-red chili peppers
-red peppers, sweet
-sweet potatoes
-tomatoes
-100% vegetable juice
-winter squash
-breadfruit
-burdock root
-cassava
-corn
-fufu
-green bananas
-green lima beans
-green peas
-hominy
-jicama
-lotus root
-parsnips
-plantains
-potatoes, white
-salsify
-tapioca
-taro root (dasheen or yautia)
-water chestnuts
-yams
-yucca
-alfalfa sprouts
-arrowroot
-artichokes
-asparagus
-avocado
-bamboo shoots
-bean sprouts
-beets
-bitter melon (bitter gourd, balsam pear)
-broccoflower
-Brussels sprouts
-cabbage
-cactus pads (nopales)
-cauliflower
-celeriac
-celery
-chayote (mirliton)
-chives
-cucumbers
-daikon
-drumstick pods (moringa)
-eggplant
-fennel bulb
-fiddlehead ferns
-garlic
-ginger root
-green peppers
-green beans
-hearts of palm
-Jerusalem artichokes (sunchokes)
-jute
-kohlrabi
-leeks
-lettuce, iceberg
-luffa (Chinese okra)
-mushrooms
-okra
-onions
-pattypan squash
-purslane
-radicchio
-radishes
-red cabbage
-rutabaga
-seaweed
-scallions
-snow peas
-sorrel
-spaghetti squash
-tomatillos
-turnips
-wax beans
-yellow squash
+amaranth leaves,
+arugula (rocket),
+basil,
+beet greens,
+bitter melon leaves,
+bok choy,
+broccoli,
+broccoli rabe (rapini),
+broccolini,
+chamnamul,
+chard,
+chrysanthemum leaves,
+cilantro,
+collard greens,
+cress,
+dandelion greens,
+dark-green leafy lettuce,
+endive,
+escarole,
+kale,
+lambsquarters,
+mesclun,
+mixed greens,
+mustard greens,
+nettles,
+poke greens,
+romaine lettuce,
+spinach,
+Swiss chard,
+taro leaves,
+turnip greens,
+watercress,
+acorn squash,
+butternut squash,
+calabaza,
+carrots,
+hubbard squash,
+kabocha squash,
+pimento/pimiento,
+pumpkin,
+red and orange bell peppers,
+red chili peppers,
+red peppers,
+sweet potatoes,
+tomatoes,
+100% vegetable juice,
+winter squash,
+breadfruit,
+burdock root,
+cassava,
+corn,
+fufu,
+green bananas,
+green lima beans,
+green peas,
+hominy,
+jicama,
+lotus root,
+parsnips,
+plantains,
+potatoes, white,
+salsify,
+tapioca,
+taro root (dasheen or yautia),
+water chestnuts,
+yams,
+yucca,
+alfalfa sprouts,
+arrowroot,
+artichokes,
+asparagus,
+avocado,
+bamboo shoots,
+bean sprouts,
+beets,
+bitter melon (bitter gourd, balsam pear),
+broccoflower,
+Brussels sprouts,
+cabbage,
+cactus pads (nopales),
+cauliflower,
+celeriac,
+celery,
+chayote (mirliton),
+chives,
+cucumbers,
+daikon,
+drumstick pods (moringa),
+eggplant,
+fennel bulb,
+fiddlehead ferns,
+garlic,
+ginger root,
+green peppers,
+green beans,
+hearts of palm,
+Jerusalem artichokes (sunchokes),
+jute,
+kohlrabi,
+leeks,
+lettuce, iceberg,
+luffa (Chinese okra),
+mushrooms,
+okra,
+onions,
+pattypan squash,
+purslane,
+radicchio,
+radishes,
+red cabbage,
+rutabaga,
+seaweed,
+scallions,
+snow peas,
+sorrel,
+spaghetti squash,
+tomatillos,
+turnips,
+wax beans,
+yellow squash,
 zucchini

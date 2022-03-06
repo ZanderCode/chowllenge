@@ -1,10 +1,10 @@
-clams
-crab
-crayfish
-lobster
-mussels
-octopus
-oysters
-scallops
-shrimp
+clams,
+crab,
+crayfish,
+lobster,
+mussels,
+octopus,
+oysters,
+scallops,
+shrimp,
 squid (calamari)

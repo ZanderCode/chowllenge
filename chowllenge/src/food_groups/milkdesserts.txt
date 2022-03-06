@@ -1,7 +1,7 @@
-frozen yogurt
-ice milk
-ice cream
-lassi
-puddings
-sherbet
+frozen yogurt,
+ice milk,
+ice cream,
+lassi,
+puddings,
+sherbet,
 smoothies

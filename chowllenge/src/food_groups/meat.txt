@@ -1,7 +1,7 @@
-beef
-ham
-lamb
-chicken
-pork
-turkey
+beef,
+ham,
+lamb,
+chicken,
+pork,
+turkey,
 duck

@@ -1,7 +1,7 @@
-chocolate
-soda
-squid ink
-insect
-kimchi
-beef tongue
+chocolate,
+soda,
+squid ink,
+insect,
+kimchi,
+beef tongue,
 bok choy

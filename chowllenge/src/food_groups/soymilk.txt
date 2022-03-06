@@ -1,3 +1,3 @@
-soy milk
-almond milk
+soy milk,
+almond milk,
 oat milk

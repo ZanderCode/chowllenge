@@ -1,22 +1,22 @@
-bayo beans
-bean burgers
-black beans
-black-eyed peas
-brown beans
-chickpeas (garbanzo beans)
-cow peas
-edamame (young soybeans)
-falafel (spiced, mashed chickpeas)
-fava beans (broad beans)
-hummus (chickpea spread)
-kidney beans
-lentils
-lima beans (mature)
-mung beans
-navy beans
-pigeon peas
-pink beans
-pinto beans
-soy beans
-split peas
+bayo beans,
+bean burgers,
+black beans,
+black-eyed peas,
+brown beans,
+chickpeas (garbanzo beans),
+cow peas,
+edamame (young soybeans),
+falafel (spiced, mashed chickpeas),
+fava beans (broad beans),
+hummus (chickpea spread),
+kidney beans,
+lentils,
+lima beans (mature),
+mung beans,
+navy beans,
+pigeon peas,
+pink beans,
+pinto beans,
+soy beans,
+split peas,
 white beans

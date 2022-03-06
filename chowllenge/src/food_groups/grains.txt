@@ -1,68 +1,68 @@
-amaranth
-barley (not pearled)
-brown rice
-buckwheat
-bulgur (cracked wheat)
-dark rye
-kamut
-millet
-muesli
-oatmeal
-oats
-popcorn
-quinoa
-rolled oats
-sorghum
-spelt
-teff
-triticale
-whole grain barley
-whole grain cornmeal
-whole grain sorghum
-whole rye
-whole wheat bread
-whole wheat cereal flakes
-whole wheat chapati
-whole wheat crackers
-whole wheat pasta
-whole wheat sandwich buns and rolls
-whole wheat tortillas
-wild rice
-bagels
-biscuits
-breadcrumbs
-cakes
-challah bread
-cookies
-corn flakes
-corn tortillas
-cornbread
-couscous
-crackers, saltine
-cream of rice
-cream of wheat
-English muffins
-flour tortilla
-French bread
-grits
-masa
-matzo
-naan
-noodles
-pancakes
-pasta (spaghetti, macaroni)
-pie/pastry crusts
-pita bread
-pizza crust
-polenta
-pretzels
-ramen noodles
-refined-grain cereals
-refined-grain crackers
-rice cakes
-rice paper (spring roll wrappers)
-rice vermicelli
-waffles
-white bread
-white rice
+amaranth,
+barley (not pearled),
+brown rice,
+buckwheat,
+bulgur (cracked wheat),
+dark rye,
+kamut,
+millet,
+muesli,
+oatmeal,
+oats,
+popcorn,
+quinoa,
+rolled oats,
+sorghum,
+spelt,
+teff,
+triticale,
+whole grain barley,
+whole grain cornmeal,
+whole grain sorghum,
+whole rye,
+whole wheat bread,
+whole wheat cereal flakes,
+whole wheat chapati,
+whole wheat crackers,
+whole wheat pasta,
+whole wheat sandwich buns and rolls,
+whole wheat tortillas,
+wild rice,
+bagels,
+biscuits,
+breadcrumbs,
+cakes,
+challah bread,
+cookies,
+corn flakes,
+corn tortillas,
+cornbread,
+couscous,
+crackers, saltine,
+cream of rice,
+cream of wheat,
+English muffins,
+flour tortilla,
+French bread,
+grits,
+masa,
+matzo,
+naan,
+noodles,
+pancakes,
+pasta (spaghetti, macaroni),
+pie/pastry crusts,
+pita bread,
+pizza crust,
+polenta,
+pretzels,
+ramen noodles,
+refined-grain cereals,
+refined-grain crackers,
+rice cakes,
+rice paper (spring roll wrappers),
+rice vermicelli,
+waffles,
+white bread,
+white rice,
 white sandwich buns and rolls

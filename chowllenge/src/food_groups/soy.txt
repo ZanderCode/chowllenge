@@ -1,4 +1,4 @@
-tempeh
-texturized vegetable protein (TVP)
-tofu (made from soybeans)
+tempeh,
+texturized vegetable protein (TVP),
+tofu (made from soybeans),
 veggie burgers
