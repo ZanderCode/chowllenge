@@ -57,10 +57,40 @@ class Slot extends Component{
         var len = Object.keys(solidResult).length
         var rnd = Object.keys(solidResult)[this.getRandomInt(len)];
         var list = solidResult[rnd];
-        console.log(list)
         var rnd2 = this.getRandomInt(list.length);
-        console.log(solidResult[rnd][rnd2])
+        var first = solidResult[rnd][rnd2];
 
+        var secondlen = Object.keys(solidResult).length
+        var secondrnd = Object.keys(solidResult)[this.getRandomInt(secondlen)];
+        var secondlist = solidResult[secondrnd];
+        var secondrnd2 = this.getRandomInt(secondlist.length);
+        var second = solidResult[secondrnd][secondrnd2];
+
+        var thirdlen = Object.keys(liquidResult).length
+        var thirdrnd = Object.keys(liquidResult)[this.getRandomInt(thirdlen)];
+        var thirdlist = liquidResult[thirdrnd];
+        var thirdrnd2 = this.getRandomInt(thirdlist.length);
+        var third = liquidResult[thirdrnd][thirdrnd2];
+
+        var fourthlen = Object.keys(wildResult).length
+        var fourthrnd = Object.keys(wildResult)[this.getRandomInt(fourthlen)];
+        var fourthlist = wildResult[fourthrnd];
+        var fourthrnd2 = this.getRandomInt(fourthlist.length);
+        var fourth = wildResult[fourthrnd][fourthrnd2];
+
+        console.log(first)
+        console.log(second)
+        console.log(third)
+        console.log(fourth)
+
+        this.setState({
+            solidOne:first,
+            solidTwo:second,
+            liquid:third,
+            wildCard:fourth,
+        })
+
+        
     }
 
     getRandomInt(max) {
