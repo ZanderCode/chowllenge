@@ -31,6 +31,7 @@ class Slot extends Component{
             solidTwo:"Roll",
             liquid:"Roll",
             wildCard:"Roll",
+            saved : false
         }
     }
 
@@ -110,9 +111,9 @@ class Slot extends Component{
         return content
     }
 
-    async save(db,auth){
+    async save(db,auth,ingredients){
 
-        let ings = ["a","b","c"]
+        let ings = [...ingredients]
 
         try {
             const docRef = await addDoc(collection(db, auth.currentUser.email), {
@@ -120,6 +121,9 @@ class Slot extends Component{
               comments: "",
               image: ""
             });
+            this.setState({
+                saved : true
+            })
             console.log("Document written with ID: ", docRef.id);
           } catch (e) {
             console.error("Error adding document: ", e);
@@ -130,6 +134,9 @@ class Slot extends Component{
 
         if (!this.props.a.currentUser){
             return (<Navigate to="/"/>);
+        }
+        if (this.state.saved){
+            return (<Navigate to="/accepted"/>);
         }
 
         const rollStyle = {
@@ -156,7 +163,7 @@ class Slot extends Component{
                 <div>{this.state.liquid}</div>
                 <div>{this.state.wildCard}</div>
                 <div style={rollStyle} onClick={()=>this.readFiles()}>Roll</div>
-                <div style={saveStyle} onClick={()=>this.save(this.props.d,this.props.a)}>Submit </div>
+                <div style={saveStyle} onClick={()=>this.save(this.props.d,this.props.a,[this.state.solidOne,this.state.solidTwo,this.state.liquid,this.state.wildCard])}>Submit </div>
             </div>        
         );
     }

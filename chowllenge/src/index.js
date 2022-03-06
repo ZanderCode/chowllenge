@@ -5,7 +5,6 @@ import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Login from "./routes/Login";
 import Slot from "./routes/Slot";
 import Accepted from "./routes/Accepted";
-import History from "./routes/History";
 import NotFound from "./routes/NotFound";
 
 import { AuthProvider } from './contexts/AuthContext';
@@ -39,8 +38,7 @@ const auth = getAuth();
         <Routes>
           <Route exact path="/" element={<Login a={auth} p={provider}/>} />
           <Route path="/slot" element={<Slot a={auth} d={db}/>}/>
-          <Route path="/history" element={<History />} />
-          <Route path="/accepted" element={<Accepted />} />
+          <Route path="/accepted" element={<Accepted a={auth} d={db}/>} />
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </AuthProvider>

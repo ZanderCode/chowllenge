@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import {useAuth} from "../contexts/AuthContext"
 import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { Navigate } from "react-router-dom";
+import Button from '@mui/material/Button';
+
+import "../css/login.css"
 
 // export default function Login(){
 //     const {signIn,logOut,currentUser} = useAuth()
@@ -58,11 +61,13 @@ class Login extends Component{
         if (this.state.slotpage){
             return (<Navigate to="/slot"/>);       
         }
+
         return(
             <div>
-                <div onClick={()=>this.login(this.props.a,this.props.p)}> login </div>
-                <div onClick={()=>this.logOut(this.props.a)}> log out </div>
-                <h1>{this.props.a.currentUser ? this.props.a.currentUser.email : ""}</h1>
+                <div className="login-button">
+                    <Button variant="contained" onClick={()=>this.login(this.props.a,this.props.p)}> login </Button>
+                    <p>w/ google</p>
+                </div>
             </div>
         );
     }
