@@ -1,0 +1,16 @@
+cheddar
+Gouda
+mozzarella
+muenster
+parmesan
+provolone
+Romano
+Swiss
+brie
+camembert
+cottage cheese
+feta
+ricotta
+American
+queso blanco
+queso fresco
