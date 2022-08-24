@@ -1,5 +1,6 @@
 # chowllenge
-A food at that makes cooking fun and interesting
+A food app that makes cooking fun and interesting
 
 
+##inspo
 https://www.myplate.gov/eat-healthy/food-group-gallery
